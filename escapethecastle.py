@@ -1,4 +1,4 @@
-#Welcome the player
+#Welcome the player!
 print("=== ESCAPE THE CASTLE ==")
 print("Welcome, adventurer!")
  
