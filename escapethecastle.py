@@ -25,3 +25,36 @@ print(f"Has Key: {hasKey}")
 print(f"\n{playerName}, you find yourself in a dark and mysterious castle. Your goal is to escape, but beware of the dangers that lie ahead!")
 print("You hear footsteps approaching...")
 print("Your adventure is about to begin!")
+
+# ==========================================
+# ESCAPE THE CASTLE - SCENE 1: THE CELL
+# ==========================================
+ 
+# Introduce the scene to the player
+print("You wake up in a dark castle cell.")
+print("You can see a door, a window and an old bed")
+
+# Ask the player what they want to investigate
+# .lower() converts their answer to lowercase
+
+choice = input("Do you want to investigate the door, window or bed?: ").lower()
+ 
+# Check whether the player chose the door
+if choice == "door":
+    print("You walk towards the door.")
+    print("You try the handle, but is it locked.")
+ 
+# Check whether the player chose the window
+elif choice == "window":
+    print("You look through the window.")
+    print("It is too small to escape through")
+ 
+# Check whether the player chose the bed
+elif choice == "bed":
+    print("You look under the bed")
+    print("You find a small Iron Key")
+ 
+else:
+    print("You decide not to investigate")
+
+ 
