@@ -1,34 +1,41 @@
 # ==========================================
 # ESCAPE THE CASTLE - SCENE 1: THE CELL
 # ==========================================
- 
-# Introduce the scene to the player
-print("You wake up in a dark castle cell.")
-print("You can see a door, a window and an old bed")
- 
-# Ask the player what they want to investigate
-# .lower() converts their answer to lowercase
-choice = input("Do you want to investigate the door, window or bed?: ").lower()
- 
-# Check whether the player chose the door
-if choice == "door":
-    print("You walk towards the door.")
-    print("You try the handle, but is it locked.")
- 
-# Check whether the player chose the window
-elif choice == "window":
-    print("You look through the window.")
-    print("It is too small to escape through")
- 
-# Check whether the player chose the bed
-elif choice == "bed":
-    print("You look under the bed")
-    print("You find a small Iron Key")
- 
-else:
-    print("You decide not to investigate")
- 
- 
+ inventory = []
+
+def cell():
+    # Introduce the scene to the player
+    print("You wake up in a dark castle cell.")
+    print("You can see a door, a window and an old bed")
+
+    while has_key == False:
+
+        # Ask the player what they want to investigate
+        # .lower() converts their answer to lowercase
+        choice = input("Do you want to investigate the door, window or bed?: ").lower()
+        
+        # Check whether the player chose the door
+        if choice == "door":
+            print("You walk towards the door.")
+            print("You try the handle, but is it locked.")
+        
+        # Check whether the player chose the window
+        elif choice == "window":
+            print("You look through the window.")
+            print("It is too small to escape through")
+        
+        # Check whether the player chose the bed
+        elif choice == "bed":
+            print("You look under the bed")
+            print("You find a small Iron Key")
+            inventory.append("Iron Key")
+            has_key = True
+        
+        else:
+            print("You decide not to investigate")
+
+#end region
+
 # ==========================================
 # ESCAPE THE CASTLE - SCENE 2: THE CORRIDOR
 # ==========================================
