@@ -204,6 +204,8 @@ def show_continue_button(text = "Continue"):
 # ========================================================
 # 4. START SCREEN — NAME INPUT FROM DAY 1
 # =========================================================
+room = None
+
 if not st.session_state.game_started:
     st.write("You wake beneath an ancient castle. Your goal is to escape.")
     name = st.text_input("What is your name?")
