@@ -263,6 +263,7 @@ if room == "cell":
 # ============================================================
 # ROOM 2 — CORRIDOR (MODEL RESULT -> CONTINUE)
 # ============================================================
+
 elif room == "corridor":
     show_room("🕯️ The Corridor", "A wooden cabinet stands beside the staircase.")
     if not st.session_state.action_complete:
